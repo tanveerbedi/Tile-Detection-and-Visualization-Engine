@@ -1,0 +1,26 @@
+# ============ Original Dependencies ============
+fastapi
+uvicorn
+pillow
+numpy
+torch
+torchvision
+ultralytics
+scikit-learn
+opencv-python
+pandas
+jinja2
+python-multipart
+
+# ============ New Dependencies (Visualization Engine) ============
+streamlit
+streamlit-drawable-canvas
+timm
+scipy
+
+# Notes:
+# - MiDaS is loaded via torch.hub (auto-download, no pip package needed)
+# - DeepLabV3 is built into torchvision (no extra install)
+# - GPU: Install torch with CUDA support for faster inference
+#   e.g., pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+# - CPU: Works out-of-the-box but ~5-10x slower for depth/segmentation

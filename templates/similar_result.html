@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tile Recommendations</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f6f8;
+            text-align:center;
+            padding:30px;
+        }
+
+        h2{
+            margin-bottom:30px;
+        }
+
+        .grid{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+
+        .tile{
+            background:white;
+            margin:15px;
+            padding:15px;
+            width:240px;
+            border-radius:12px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.1);
+            transition:0.2s;
+        }
+
+        .tile:hover{
+            transform:translateY(-5px);
+        }
+
+        img{
+            width:220px;
+            height:220px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .score{
+            font-size:18px;
+            color:#28a745;
+            font-weight:bold;
+        }
+
+        .meta{
+            text-align:left;
+            margin-top:8px;
+            font-size:14px;
+        }
+
+        .meta span{
+            font-weight:bold;
+        }
+
+        a{
+            display:inline-block;
+            margin-top:25px;
+            text-decoration:none;
+            background:#007bff;
+            color:white;
+            padding:10px 15px;
+            border-radius:6px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Top Matching Tiles</h2>
+
+<div class="grid">
+{% for m in matches %}
+    <div class="tile">
+        <img src="{{ m.image }}">
+
+
+        <p><b>{{ m.name }}</b></p>
+
+        <p class="score">
+            {{ (m.score * 100) | round(1) }}% Match
+        </p>
+
+        <div class="meta">
+            <p><span>Size:</span> {{ m.size }}</p>
+            <p><span>Texture:</span> {{ m.texture }}</p>
+            <p><span>Color:</span> {{ m.color }}</p>
+        </div>
+    </div>
+{% endfor %}
+</div>
+
+<a href="/">⬅ Back</a>
+
+</body>
+</html>

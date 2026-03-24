@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Tile Detection</title>
+
+```
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f4f6f8;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+    }
+
+    .card{
+        background:white;
+        padding:40px;
+        border-radius:12px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.1);
+        text-align:center;
+        width:400px;
+    }
+
+    h1{
+        margin-bottom:20px;
+    }
+
+    input[type="file"]{
+        margin-top:20px;
+    }
+
+    button{
+        margin-top:20px;
+        padding:12px 20px;
+        font-size:16px;
+        border:none;
+        background:#007bff;
+        color:white;
+        border-radius:8px;
+        cursor:pointer;
+        width:100%;
+    }
+
+    button:hover{
+        background:#0056b3;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Upload Tile Image</h1>
+
+```
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <br>
+    <button type="submit">Detect Tiles</button>
+</form>
+```
+
+</div>
+
+</body>
+</html>

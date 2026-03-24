@@ -1,0 +1,11 @@
+Canvas size: (np.int64(439), np.int64(205))
+Homography:
+[[  1.   0. 100.]
+ [  0.   1.  50.]
+ [  0.   0.   1.]]
+Warped Tiles: max=244, min=0, non_zero=269985
+Lit Tiles: max=255, min=0, non_zero=269985
+Colored Tiles: max=255, min=0, non_zero=589590
+Final Result: max=255, min=0, non_zero=1226940
+Warped inside mask: shape=(90640, 3), max=244, mean=155.55334657252132
+Colored inside mask: max=255, mean=155.9908392174169

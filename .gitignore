@@ -1,0 +1,17 @@
+# virtual env
+.venv/
+venv/
+
+# images
+tiles_images/
+static/tiles_images/
+
+# uploads
+uploads/
+
+# python cache
+__pycache__/
+*.pyc
+
+# env files
+.env
