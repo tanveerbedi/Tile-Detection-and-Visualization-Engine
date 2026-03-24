@@ -2,7 +2,7 @@
 
 # 🏠 Tile Detection and Visualization Engine
 
-### *Detect, recommend, and photorealistically visualize tiles on any surface — from a single photograph.*
+### *Detect, recommend, and visualize tiles on any surface — from a single photograph.*
 
 ---
 
